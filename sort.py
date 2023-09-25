@@ -79,7 +79,7 @@ for word in words:
 
 for key, array in dictionary.items():
     with open(f"sorted_by_sound/{key}.csv", "w") as f:
-        f.write("\n".join(array))
+        f.write('"漢字","拼音","意味"\n' + "\n".join(array))
 
 pprint.pprint(dictionary)
     
